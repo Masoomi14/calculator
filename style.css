@@ -1,0 +1,98 @@
+/* style Calculator */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+#sectionOne {
+    width: 500px;
+    height: 540px;
+    margin: 50px auto 0;
+    border-radius: 10px;
+}
+
+.topBar {
+    width: inherit;
+    height: 35px;
+    background-color: #d1d1d1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.showOutPut {
+    width: 500px;
+    height: 130px;
+    background-color: #c0a0a0;
+    overflow: auto;
+}
+
+.contentShowe {
+
+    margin-top: 10px;
+    padding: 15px 10px 0 0;
+    overflow: auto;
+    font-size: 30px;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: pre-line;
+    background-color: #c0a0a0;
+    border: 0;
+
+}
+
+.contentShowe:focus {
+    border: none;
+    outline: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+.showOutPut::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+
+.showOutPut {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.sizeBut {
+    height: 80px;
+    border-width: 0px;
+    border-color: black;
+    background-color: #cccccc;
+}
+
+.sizeBut:hover {
+    background-color: #256dd8;
+    border-radius: 3px !important;
+    transition-duration: 0.5s;
+}
+
+.sizeBut:focus {
+    border: none;
+    outline: none;
+}
+
+.sizeBut:active {
+    background-color: rgb(200, 74, 74) !important;
+    transition-delay: 0s;
+    top: 1px;
+}
+
+.row .botLeftRadius {
+    border-bottom-left-radius: 10px;
+}
+
+.row .botRightRadius {
+    border-bottom-right-radius: 10px;
+}
+

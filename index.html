@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- My Link Style -->
+    <link rel="stylesheet" href="./style.css" />
+
+
+
+    <!-- Link Library -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>My Calculator</title>
+
+ 
+</head>
+
+<body> 
+
+    <section id="sectionOne">
+
+        <div class="container text-center">
+
+            <div class="row">
+                <div class="col-12 topBar">
+                    <span class="float-left" style="padding: 5px 18px 0 0;"><i class="fas fa-calculator"></i>
+                      <span style="padding-left: 5px";>Calculato</span>
+                    </span>
+
+
+                    <span class="float-right" style="padding: 5px 0 0 18px;"><i class="fas fa-times"></i></span>
+                    <span class="float-right" style="padding: 5px 0 0 18px;"><i class="fa fa-window-maximize" aria-hidden="true"></i></span>
+                    <span class="float-right" style="padding: 5px 0 0 0px;"><i class="fas fa-minus"></i></span>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-md-12 showOutPut">
+                    <textarea id="shower" class="contentShowe float-left" rows="2" cols="31">Result</textarea>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+                <button class="col-md-3 sizeBut" onclick="clearAll()"><i class="far fa-eraser"></i></button>
+                <button class="col-md-3 sizeBut" onclick="clearOneLetter()"><i class="far fa-undo"></i></button>
+                <button class="col-md-3 sizeBut" onclick="percentage()"><i class="far fa-percentage"></i></button>
+                <button class="col-md-3 sizeBut" onclick="divide()"><i class="far fa-divide"></i></button>
+            </div>
+
+            <div class="row">
+                <button id="7" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">7</button>
+                <button id="8" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">8</button>
+                <button id="9" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">9</button>
+
+                <button id="265" class="col-md-3 sizeBut" onclick="times()"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="row">
+                <button id="4" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">4</button>
+                <button id="5" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">5</button>
+                <button id="6" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">6</button>
+                <button id="266" class="col-md-3 sizeBut" onclick="minus()"><i class="fal fa-minus"></i></button>
+            </div>
+            <div class="row">
+                <button id="1" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">1</button>
+                <button id="2" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">2</button>
+                <button id="3" class="col-md-3 sizeBut" onclick="writeNumber(this.id)">3</button>
+                <button class="col-md-3 sizeBut" onclick="plus()"><i class="far fa-plus"></i></button>
+            </div>
+            <div class="row">
+                <button class="col-md-3 sizeBut botLeftRadius"><i class="fad fa-bring-front"></i></button>
+                <button id="0" class="col-md-3 sizeBut" onclick="writeNumberOh(this.id)">0</button>
+                <button id="." class="col-md-3 sizeBut" onclick="writeNumberDot(this.id)">.</button>
+                <button class="col-md-3 sizeBut botRightRadius" onclick="result()"><i class="far fa-equals"></i></button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
